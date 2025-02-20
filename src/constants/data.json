@@ -1,0 +1,79 @@
+[
+    {
+        "name" : "public",
+        "isfolder" : true,
+        "children":[
+            {
+                "name":"assets",
+                "isfolder":false
+            },
+            {
+                "name":"fonts",
+                "isfolder":false
+            }
+        ]
+
+    },
+    {
+        "name" : "src",
+        "isfolder":true,
+        "children":[
+            {
+                "name":"components",
+                "isfolder":true,
+                "children":[
+                    {
+                        "name":"navbar.jsx",
+                        "isfolder":false
+                    },
+                    {
+                        "name":"footer.jsx",
+                        "isfolder":false
+                    }
+                ]
+            },
+
+            {
+                "name":"app.jsx",
+                "isfolder":false
+            },
+            {
+                "name":"main.jsx",
+                "isfolder":false
+            }
+        ]
+
+
+    },
+    {
+        "name" : "utils",
+        "isfolder":true,
+        "children":[
+            {
+                "name":"constants.js",
+                "isfolder":false
+            }
+        ]
+    },
+    {
+        "name":"index.html",
+        "isfolder":false
+    },
+    {
+        "name":"package-lock.json",
+        "isfolder":false
+    },
+    {
+        "name":"package.json",
+        "isfolder":false
+    },
+    {
+        "name":"README.md",
+        "isfolder":false
+    },
+    {
+        "name":"vite.config.js",
+        "isfolder":false
+    }
+    
+]
