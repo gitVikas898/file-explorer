@@ -2,14 +2,31 @@
     {
         "name" : "public",
         "isfolder" : true,
+        "type" :"generic",
         "children":[
             {
                 "name":"assets",
-                "isfolder":false
+                "isfolder":true,
+                "type" :"generic",
+                "children":[
+                    {
+                        "name":"logo.svg",
+                        "isfolder":false,
+                        "type":"svg"
+                    }
+                ]
             },
             {
                 "name":"fonts",
-                "isfolder":false
+                "isfolder":true,
+                "type" :"generic",
+                "children":[
+                    {
+                        "name":"font.ttf",
+                        "isfolder":false,
+                        "type":"ttf"
+                    }
+                ]
             }
         ]
 
@@ -17,29 +34,35 @@
     {
         "name" : "src",
         "isfolder":true,
+        "type":"generic",
         "children":[
             {
                 "name":"components",
                 "isfolder":true,
+                "type":"generic",
                 "children":[
                     {
                         "name":"navbar.jsx",
-                        "isfolder":false
+                        "isfolder":false,
+                        "type":"jsx"
                     },
                     {
                         "name":"footer.jsx",
-                        "isfolder":false
+                        "isfolder":false,
+                        "type":"jsx"
                     }
                 ]
             },
 
             {
                 "name":"app.jsx",
-                "isfolder":false
+                "isfolder":false,
+                "type":"jsx"
             },
             {
                 "name":"main.jsx",
-                "isfolder":false
+                "isfolder":false,
+                "type":"jsx"
             }
         ]
 
@@ -48,32 +71,39 @@
     {
         "name" : "utils",
         "isfolder":true,
+        "type" :"generic",
         "children":[
             {
                 "name":"constants.js",
-                "isfolder":false
+                "isfolder":false,
+                "type":"js"
             }
         ]
     },
     {
         "name":"index.html",
-        "isfolder":false
+        "isfolder":false,
+        "type":"html"
     },
     {
         "name":"package-lock.json",
-        "isfolder":false
+        "isfolder":false,
+        "type":"json"
     },
     {
         "name":"package.json",
-        "isfolder":false
+        "isfolder":false,
+        "type":"json"
     },
     {
         "name":"README.md",
-        "isfolder":false
+        "isfolder":false,
+        "type":"MD"
     },
     {
         "name":"vite.config.js",
-        "isfolder":false
+        "isfolder":false,
+        "type":"js"
     }
     
 ]

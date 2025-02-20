@@ -8,7 +8,9 @@ function App() {
   return (
     <div>
       <h1>File Folder Structure</h1>
-      <List list={data} />
+      <div className="border">
+        <List list={data} />
+      </div>
     </div>
   );
 }
@@ -16,11 +18,13 @@ function App() {
 
 const List = ({list})=>{
     return(
-      <div>
-          {list.map((node)=>(
-            <Treenode node={node} key = {node.name}/>
-          ))}
-      </div>
+     
+        <div className="">
+            {list.map((node)=>(
+              <Treenode node={node} key = {node.name}/>
+            ))}
+        </div>
+     
     )
 }
 
@@ -32,9 +36,9 @@ const Treenode = ({ node}) => {
   return (
     <div className="node">
         {node?.isfolder && (<span className="click" onClick={handleExpand}>
-          {expanded ? "🔽" : "▶️"}
+          {expanded ? "🔽" : "> "}
         </span>)}
-        <span onClick={handleExpand}>{node.name}</span>
+        <span onClick={handleExpand}><img src={`/public/${node?.type || node?.children?.type}.png`} className="icon"></img>{node.name}</span>
         {expanded && node?.children && (
           <List list={node.children}/>
         )}
